@@ -19,7 +19,7 @@ A curated list of the best jazz stations-- straight from the pros.
 
 ```bash
 git clone https://github.com/syntaxerror019/jazz-player.git
-cd jazz-player
+cd jazz-player/src
 
 # Install requirements
 pip install -r requirements.txt
