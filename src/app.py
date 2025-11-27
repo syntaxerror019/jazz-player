@@ -42,6 +42,12 @@ def save_favorites(faves):
     with open(FAV_FILE, 'w') as f:
         json.dump(faves, f, indent=2)
 
+def start_last():
+    faves = load_favorites()
+    if faves:
+        last_station = next((f for f in faves if f["changeuuid"] == "582419c8-feeb-4354-8674-2117d2e7eb8b"), None)
+        set_mpd_stream(last_station["url_resolved"])
+
 @app.route("/")
 def index():
     # pagination
@@ -99,4 +105,5 @@ def favorites_list():
     return jsonify(load_favorites())
 
 if __name__ == "__main__":
+    start_last()
     app.run(host="0.0.0.0", port=8080, debug=False)
