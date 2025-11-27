@@ -19,6 +19,8 @@ def set_mpd_stream(url):
     client = MPDClient()
     client.timeout = 2
     client.idletimeout = None
+    
+    client.setvol(100)
 
     client.connect(MPD_HOST, MPD_PORT)
     client.stop()
