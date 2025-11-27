@@ -97,7 +97,7 @@ function playStation(uuid) {
         .catch(() => { spinner.style.display='none'; });
 }
 
-// Toggle favorite
+// toggle favorite
 function toggleFavorite(event, uuid) {
     event.stopPropagation();
     fetch(`/favorite/${uuid}`, { method: 'POST' })
