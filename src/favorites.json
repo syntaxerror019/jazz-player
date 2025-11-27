@@ -1,8 +1,8 @@
 [
   {
-    "changeuuid": "",
-    "stationuuid": "",
-    "serveruuid": "",
+    "changeuuid":	"a8e525f7-badf-41d4-b770-d6374e1d5f86",
+    "stationuuid":	"961ac56b-0601-11e8-ae97-52543be04c81",
+    "serveruuid":	"5128946f-ce24-4e1c-8a75-ff284b87becd",
     "name": "Default: Swiss Jazz",
     "url": "https://livestreaming-node-2.srg-ssr.ch/srgssr/rsj/mp3/128",
     "url_resolved": "https://livestreaming-node-2.srg-ssr.ch/srgssr/rsj/mp3/128",
